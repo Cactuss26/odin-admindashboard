@@ -15,6 +15,16 @@
     src: url("Lato-Black.woff2");
 }
 
+@font-face {
+    font-family: "Nunito";
+    src: url("Nunito-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url("FiraSans-Regular.woff2");
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -44,7 +54,7 @@ body {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr;
 }
 
 .content {
@@ -80,9 +90,8 @@ li {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 3fr;
-    gap: 0px;
     justify-content: center;
-    align-items: center;
+    padding: 20px 0px;
 }
 
 .welcome > img {
@@ -94,11 +103,16 @@ li {
 .greeting {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    font-family: "Lato-Black", Verdana, Geneva, Tahoma, sans-serif;
+    align-self: center;
 }
 
 .name {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    font-family: "Lato-Black", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.7rem;
+    align-self: start;
 }
 
 .profile {
@@ -113,10 +127,11 @@ li {
     grid-auto-rows: 1fr;
     gap: 15px;
     justify-content: left;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 700;
     padding-left: 50px;
     color: white;
-    font-family: "Lato", Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Fira-Sans", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .logo {
@@ -124,9 +139,10 @@ li {
     justify-content: left;
     align-items: center;
     font-size: 1.7rem;
-    padding: 30px 50px;
+    font-weight: 800;
+    padding: 20px 35px;
     color: white;
-    font-family: "Lato-Black", Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Fira-Sans", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 path[id="sidebar"] {
@@ -136,20 +152,19 @@ path[id="sidebar"] {
 svg {
     position: relative;
     padding-right: 10px;
-    top: 2px;
+    top: 4px;
 }
 
 form {
     height: max(50%, 25px);
     width: max(50%, 300px);
     display: flex;
-
 }
 
 input {
     height: 100%;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 20px;
     padding-left: 10px;
     font-family: "Lato", Verdana, Geneva, Tahoma, sans-serif;
     background-color: var(--colortwo);
@@ -172,8 +187,23 @@ button {
     margin: 20px 0px;
 }
 
+#bell {
+    position: relative;
+    top: 0px;
+}
+
+#pfp {
+    border-radius: 50%;
+    padding: 0px;
+}
+
+#pfpicon {
+    border-radius: 50%;
+    padding: 0px;
+}
+
 #logo {
-    top: 1px;
+    top: 0px;
 }
 
 #name {
@@ -182,11 +212,7 @@ button {
     top: 1px;
 }
 
-#greeting {
-    font-family: "Lato-Black", Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#name {
-    font-family: "Lato-Black", Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5rem;
+#magnify {
+    position: relative;
+    top: 5px;
 }
