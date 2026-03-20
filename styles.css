@@ -149,8 +149,9 @@ li {
 
 .content {
     display: grid;
-    grid-template-columns: 4fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: 35vh 35vh;
+    gap: 10px;
 }
 
 .projectsdiv {
@@ -161,9 +162,14 @@ li {
 .announcementsdiv {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
+    gap: 2px;
+    margin: 20px 20px 0px 0px;
+    overflow:scroll;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 20px;
 }
 
 .trendingdiv {
@@ -172,6 +178,7 @@ li {
     border: 2px solid blue;
     display: flex;
     flex-direction: column;
+    gap: 2px;
 }
 
 .person > img {
@@ -181,7 +188,14 @@ li {
     padding: 0;
 }
 
+.announcements {
 
+    display: grid;
+}
+
+.announcement {
+    font-family: "Nunito", Verdana, Geneva, Tahoma, sans-serif;
+}
 
 path[id="sidebar"] {
     fill: white;
